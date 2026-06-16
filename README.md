@@ -1,6 +1,6 @@
 # 🍽️ Chills Restaurant Group — Q1 2026 Sales Performance Dashboard
 
-![Dashboard Preview](Dashboard/Chill Restaurant Analysis Dashboard.jpg)
+![Dashboard Preview](./Dashboard/Chill%20Restaurant%20Analysis%20Dashboard.jpg)
 
 ---
 
