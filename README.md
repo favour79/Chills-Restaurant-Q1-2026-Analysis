@@ -1,20 +1,10 @@
 # 🍽️ Chills Restaurant Group — Q1 2026 Sales Performance Dashboard
 
-![Dashboard Preview](./Dashboard/Chill%20Restaurant%20Analysis%20Dashboard.jpg)
-
----
-
-## 📌 Project Overview
-
-This project covers the end-to-end data analysis workflow for **Chills Restaurant Group**, a multi-branch Nigerian restaurant chain operating across **Lekki, Ikeja, Abuja, and Victoria Island**. The analysis examines sales performance, profitability, and operational metrics across the first quarter of 2026 using transactional data from 458 orders.
-
-The work was split into two clear phases: **data cleaning** and **dashboard development**. Both were done entirely in Excel and Power Query — no external BI tools, no scripts, just Excel done properly.
-
----
-
 ## 📑 Table of Contents
 
-- [🗂️ Project Structure](#-project-structure)
+- [Dashboard Preview](#dashboard-preview)
+- [📌 Project Overview](#-project-overview)
+- [🗂️ Project Structure](#️-project-structure)
 - [⚠️ The Data Problem](#️-the-data-problem)
 - [🧹 Case Study 1 — Data Cleaning](#-case-study-1--data-cleaning)
 - [📊 Case Study 2 — Sales Performance Dashboard](#-case-study-2--sales-performance-dashboard)
@@ -31,6 +21,20 @@ The work was split into two clear phases: **data cleaning** and **dashboard deve
 - [🚀 How to Use This Project](#-how-to-use-this-project)
 - [👤 About the Analyst](#-about-the-analyst)
 - [📄 License](#-license)
+
+---
+
+## Dashboard Preview
+
+![Dashboard Preview](./Dashboard/Chill%20Restaurant%20Analysis%20Dashboard.jpg)
+
+---
+
+## 📌 Project Overview
+
+This project covers the end-to-end data analysis workflow for **Chills Restaurant Group**, a multi-branch Nigerian restaurant chain operating across **Lekki, Ikeja, Abuja, and Victoria Island**. The analysis examines sales performance, profitability, and operational metrics across the first quarter of 2026 using transactional data from 458 orders.
+
+The work was split into two clear phases: **data cleaning** and **dashboard development**. Both were done entirely in Excel and Power Query — no external BI tools, no scripts, just Excel done properly.
 
 ---
 
@@ -162,7 +166,7 @@ Lekki leads the pack, but the spread between the top (Lekki) and the bottom (Vic
 | 6 | Banga Stew | ₦217K |
 | 7 | Egusi Soup & Pounded Yam | ₦210K |
 | 8 | Jollof Rice | ₦203K |
-| 9 | Grilled Prawns | ��197K |
+| 9 | Grilled Prawns | ₦197K |
 | 10 | Coconut Rice | ₦186K |
 
 The interesting story here is the mix — both continental dishes (Spaghetti Bolognese, Seafood Pasta) and Nigerian staples (Ofe Onugbu, Banga Stew, Egusi Soup) are performing strongly. The top ten dishes account for a significant portion of total revenue, so consistency and quality control for these items are critical.
@@ -240,7 +244,7 @@ This project was done by **Favour Chidozie Chukwu**, a Data and Credit Risk Anal
 
 - 📧 Email: [favour.chukwu@aol.com](mailto:favour.chukwu@aol.com)
 - 💼 LinkedIn: [linkedin.com/in/chidozie-chukwu-145690162](https://www.linkedin.com/in/chidozie-chukwu-145690162)
-- 📸 Instagram: [@chidozie_favor](https://www.instagram.com/chidozie_favor?igsh=aG94eWNnbzR4NzA=)
+- 📸 Instagram: [@chidozie_favor](https://www.instagram.com/chidozie_favor?igsh=aG94eWNnbzR0NzA=)
 
 ---
 
