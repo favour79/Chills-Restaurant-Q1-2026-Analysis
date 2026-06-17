@@ -6,9 +6,31 @@
 
 ## 📌 Project Overview
 
-This project covers the end-to-end data analysis workflow for **Chills Restaurant Group**, a multi-branch Nigerian restaurant chain operating across **Lekki, Ikeja, Abuja, and Victoria Island**. The goal was to take a raw, messy sales dataset for Q1 2026 (January – March), clean and standardise it properly, and then build a fully interactive performance dashboard in Microsoft Excel that the General Manager and branch leads could actually use to make decisions.
+This project covers the end-to-end data analysis workflow for **Chills Restaurant Group**, a multi-branch Nigerian restaurant chain operating across **Lekki, Ikeja, Abuja, and Victoria Island**. The analysis examines sales performance, profitability, and operational metrics across the first quarter of 2026 using transactional data from 458 orders.
 
 The work was split into two clear phases: **data cleaning** and **dashboard development**. Both were done entirely in Excel and Power Query — no external BI tools, no scripts, just Excel done properly.
+
+---
+
+## 📑 Table of Contents
+
+- [🗂️ Project Structure](#-project-structure)
+- [⚠️ The Data Problem](#️-the-data-problem)
+- [🧹 Case Study 1 — Data Cleaning](#-case-study-1--data-cleaning)
+- [📊 Case Study 2 — Sales Performance Dashboard](#-case-study-2--sales-performance-dashboard)
+- [📈 Dashboard Sections & Key Findings](#-dashboard-sections--key-findings)
+  - [🔢 KPI Summary Cards](#-kpi-summary-cards)
+  - [📅 Monthly Revenue & Profit Trend](#-monthly-revenue--profit-trend)
+  - [🍛 Revenue by Menu Category](#-revenue-by-menu-category)
+  - [🏢 Revenue by Branch](#-revenue-by-branch)
+  - [🍝 Top 10 Selling Dishes by Revenue](#-top-10-selling-dishes-by-revenue)
+  - [👨‍🍳 Revenue by Waiter](#️-revenue-by-waiter)
+  - [💸 Average Discount by Branch](#-average-discount-by-branch)
+- [🛠️ Tools & Techniques Used](#️-tools--techniques-used)
+- [💡 Recommendations from the Analysis](#-recommendations-from-the-analysis)
+- [🚀 How to Use This Project](#-how-to-use-this-project)
+- [👤 About the Analyst](#-about-the-analyst)
+- [📄 License](#-license)
 
 ---
 
@@ -53,7 +75,7 @@ Here is what was found and fixed:
 
 **Tools Used:** Microsoft Excel, Power Query
 
-The raw file came in as a single flat table with 11 columns and close to 460+ transaction rows covering all four branches across the three months. Power Query was used as the primary cleaning engine — it made it easy to apply transformations consistently without touching the raw data.
+The raw file came in as a single flat table with 11 columns and close to 460+ transaction rows covering all four branches across the three months. Power Query was used as the primary cleaning engine, and all transformations were saved as a reusable query rather than one-off edits.
 
 **Steps Taken:**
 
@@ -77,7 +99,7 @@ The cleaned dataset was structured, consistent, and ready for pivot analysis wit
 
 **Tool Used:** Microsoft Excel (PivotTables, PivotCharts, Slicers, Dashboard Layout)
 
-The dashboard was built on top of the cleaned dataset using PivotTables and PivotCharts, with slicers for interactive filtering by **Month** (Jan, Feb, Mar) and **Branch** (Abuja, Ikeja, Lekki, Victoria Island). All KPI cards at the top were formula-driven and connected to the same pivot data source, so they update automatically when slicers are applied.
+The dashboard was built on top of the cleaned dataset using PivotTables and PivotCharts, with slicers for interactive filtering by **Month** (Jan, Feb, Mar) and **Branch** (Abuja, Ikeja, Lekki, Victoria Island). The layout was designed to fit on a single screen, making it easy to share as a standalone view. No pivot table is directly visible on the dashboard — all charts and KPI cards are fed from them, giving a polished, business-ready appearance.
 
 ---
 
@@ -93,13 +115,13 @@ The dashboard was built on top of the cleaned dataset using PivotTables and Pivo
 | Profit Margin | 20.6% |
 | Average Discount | 5.6% |
 
-A 20.6% profit margin across 458 orders in a single quarter is a reasonable baseline, but there is room to push this higher — particularly by reviewing the discount structure at high-traffic branches.
+A 20.6% profit margin across 458 orders in a single quarter is a reasonable baseline, but there is room to push this higher — particularly by reviewing the discount structure at high-traffic branches and identifying cost-saving opportunities at lower-performing locations.
 
 ---
 
 ### 📅 Monthly Revenue & Profit Trend
 
-The line chart tracking monthly revenue and profit shows a reasonably consistent performance across January, February, and March. Revenue stayed in the ₦1.4M–₦1.6M range each month with no dramatic dips. Profit tracked closely with revenue, suggesting that the cost structure is relatively stable across months. No single month showed a worrying drop-off, which is a good sign for operational consistency.
+The line chart tracking monthly revenue and profit shows a reasonably consistent performance across January, February, and March. Revenue stayed in the ₦1.4M–₦1.6M range each month with no significant dips or seasonal spikes during this quarter, suggesting stable underlying demand.
 
 ---
 
@@ -111,7 +133,7 @@ The line chart tracking monthly revenue and profit shows a reasonably consistent
 | Starters | 28% |
 | Beverages | 15% |
 
-Main Course drives more than half of total revenue — which makes sense given the price points of dishes like Spaghetti Bolognese, Grilled Tilapia, and Suya Platter. Beverages at only 15% is worth noting; there may be an opportunity to upsell on the drinks side, especially at dinner service.
+Main Course drives more than half of total revenue — which makes sense given the price points of dishes like Spaghetti Bolognese, Grilled Tilapia, and Suya Platter. Beverages at only 15% is worth investigating; a modest upselling push here could move the needle.
 
 ---
 
@@ -124,7 +146,7 @@ Main Course drives more than half of total revenue — which makes sense given t
 | Abuja | ₦1.07M |
 | Victoria Island | ₦0.96M |
 
-Lekki leads the pack, but the spread between the top (Lekki) and the bottom (Victoria Island) is about ₦310K — not a massive gap, but it points to Victoria Island underperforming relative to its potential as a high-footfall location. That branch might benefit from a closer look at its menu mix and staffing patterns.
+Lekki leads the pack, but the spread between the top (Lekki) and the bottom (Victoria Island) is about ₦310K — not a massive gap, but it points to Victoria Island underperforming relative to its peers.
 
 ---
 
@@ -140,10 +162,10 @@ Lekki leads the pack, but the spread between the top (Lekki) and the bottom (Vic
 | 6 | Banga Stew | ₦217K |
 | 7 | Egusi Soup & Pounded Yam | ₦210K |
 | 8 | Jollof Rice | ₦203K |
-| 9 | Grilled Prawns | ₦197K |
+| 9 | Grilled Prawns | ��197K |
 | 10 | Coconut Rice | ₦186K |
 
-The interesting story here is the mix — both continental dishes (Spaghetti Bolognese, Seafood Pasta) and Nigerian staples (Ofe Onugbu, Banga Stew, Egusi Soup) are performing strongly. The top two earners are pasta dishes, which likely carry higher unit prices. This dual-cuisine approach seems to be working well for Chills and should be maintained.
+The interesting story here is the mix — both continental dishes (Spaghetti Bolognese, Seafood Pasta) and Nigerian staples (Ofe Onugbu, Banga Stew, Egusi Soup) are performing strongly. The top ten dishes account for a significant portion of total revenue, so consistency and quality control for these items are critical.
 
 ---
 
@@ -158,7 +180,7 @@ The interesting story here is the mix — both continental dishes (Spaghetti Bol
 | Amaka O. | ₦646K |
 | Chidi N. | ₦642K |
 
-Emeka S. and Ngozi A. are essentially neck-and-neck at the top, each pulling in around ₦850K. The ₦200K+ gap between the top two and the bottom two (Amaka O. and Chidi N.) is worth investigating — whether it comes down to table allocation, shift patterns, or upselling behaviour. This chart makes a useful starting point for performance conversations.
+Emeka S. and Ngozi A. are essentially neck-and-neck at the top, each pulling in around ₦850K. The ₦200K+ gap between the top two and the bottom two (Amaka O. and Chidi N.) is worth investigating — it may reflect experience, shift allocation, or upselling skill.
 
 ---
 
@@ -171,7 +193,7 @@ Emeka S. and Ngozi A. are essentially neck-and-neck at the top, each pulling in 
 | Abuja | 6.05% |
 | Victoria Island | 5.45% |
 
-Lekki has both the highest revenue *and* the highest average discount. This raises a question: is the Lekki branch relying on discounting to drive volume, and if so, is that sustainable? Tightening the discount policy at Lekki while maintaining service quality could push its profit margin up meaningfully. Victoria Island, on the other hand, gives the fewest discounts — which may partly explain the lower revenue if price-sensitive customers are going elsewhere.
+Lekki has both the highest revenue *and* the highest average discount. This raises a question: is the Lekki branch relying on discounting to drive volume, and if so, is that sustainable? Tightening the discount policy there could improve margins without losing too much volume.
 
 ---
 
@@ -190,15 +212,15 @@ Lekki has both the highest revenue *and* the highest average discount. This rais
 
 Based on what the dashboard surfaces, here are a few things worth acting on:
 
-1. **Review the discount policy at Lekki** — 7.75% average discount is the highest across all branches. If this is a blanket promotional practice rather than targeted offers, it is likely eroding margins unnecessarily.
+1. **Review the discount policy at Lekki** — 7.75% average discount is the highest across all branches. If this is a blanket promotional practice rather than targeted offers, it is likely eroding margins.
 
-2. **Investigate Victoria Island's underperformance** — it is the lowest revenue branch and the lowest discount branch. Low discounting with low revenue suggests demand-side issues, not a cost problem. Menu relevance and branch visibility may need attention.
+2. **Investigate Victoria Island's underperformance** — it is the lowest revenue branch and the lowest discount branch. Low discounting with low revenue suggests demand-side issues, not a cost structure problem.
 
-3. **Double down on the top dishes** — Spaghetti Bolognese and Seafood Pasta are clear revenue leaders. Ensuring consistent availability, quality, and portion accuracy for these two dishes specifically will protect a significant chunk of revenue.
+3. **Double down on the top dishes** — Spaghetti Bolognese and Seafood Pasta are clear revenue leaders. Ensuring consistent availability, quality, and portion accuracy for these two dishes specifically will protect and grow revenue.
 
-4. **Beverage upselling opportunity** — at 15% revenue contribution, beverages are underperforming relative to their potential. Training staff to pair beverage recommendations with food orders could move this needle without any menu changes.
+4. **Beverage upselling opportunity** — at 15% revenue contribution, beverages are underperforming relative to their potential. Training staff to pair beverage recommendations with food orders could boost this category by 3–5%.
 
-5. **Understand the waiter performance gap** — the ₦200K+ difference between the top and bottom waiters is worth a structured conversation. If it comes down to upselling behaviour, targeted training for the lower performers could lift overall revenue.
+5. **Understand the waiter performance gap** — the ₦200K+ difference between the top and bottom waiters is worth a structured conversation. If it comes down to upselling behaviour, targeted training for the lower performers could narrow the gap.
 
 ---
 
